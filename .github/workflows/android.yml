@@ -1,7 +1,13 @@
 name: APK Diff
 
 on:
-  pull_request:
+  pull_request:  
+  push:
+    branches:
+    - 'main'
+    - '4.**'
+    - '5.**'
+
 
 permissions:
   contents: read # to fetch code (actions/checkout)
